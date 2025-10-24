@@ -1,3 +1,17 @@
+/* --- MAIN CONTENT --- */
+main {
+  max-width: 1000px;    /* keeps content from stretching too wide */
+  margin: 0 auto;       /* centers content */
+  padding: 1rem;        /* adds space from screen edges */
+}
+
+article {
+  margin-bottom: 1.5rem; /* space between posts */
+  padding: 1rem;
+  background: #141821;
+  border-radius: 8px;
+}
+
 /* === GENERAL STYLE === */
 body {
   font-family: "Segoe UI", Roboto, sans-serif;
