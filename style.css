@@ -138,3 +138,22 @@ footer {
   .outreach-gallery { grid-template-columns: 1fr; }
   section { padding: 1rem; }
 }
+.text-image {
+  display: flex;
+  flex-wrap: wrap;       /* ensures mobile responsiveness */
+  align-items: flex-start;
+  margin-bottom: 2em;
+  gap: 1.5em;
+}
+
+.text-image .text {
+  flex: 1 1 300px;       /* text takes remaining space, minimum 300px */
+}
+
+.text-image .side-img {
+  flex: 0 0 200px;       /* image fixed width, won't shrink below 200px */
+  height: auto;
+  border-radius: 8px;
+  max-width: 100%;
+}
+
