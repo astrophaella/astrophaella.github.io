@@ -153,7 +153,7 @@ footer {
 
 .text-image .side-img {
   flex: 0 0 300px;         /* default image width on desktop */
-  max-width: 100%;
+  max-width: 40%;
   height: auto;
   border-radius: 8px;
   object-fit: cover;
