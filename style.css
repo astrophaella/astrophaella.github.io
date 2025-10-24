@@ -138,21 +138,34 @@ footer {
   .outreach-gallery { grid-template-columns: 1fr; }
   section { padding: 1rem; }
 }
+
 .text-image {
-  display: grid;
-  grid-template-columns: 1fr auto; /* text takes available space, image fixed width */
-  gap: 2rem;
-  align-items: start;
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5em;
   margin-bottom: 2em;
+  flex-wrap: nowrap;       /* keeps text and image side by side */
 }
 
 .text-image .text {
-  /* nothing special needed here, will fill left side */
+  flex: 1;                 /* text takes remaining space */
 }
 
 .text-image .side-img {
-  width: 200px;      /* fixed width for image */
+  flex: 0 0 300px;         /* default image width on desktop */
+  max-width: 100%;
   height: auto;
   border-radius: 8px;
+  object-fit: cover;
 }
 
+@media (max-width: 500px) {
+  .text-image {
+    flex-direction: column;  /* stack text above image on very small screens */
+    gap: 1em;
+  }
+  .text-image .side-img {
+    flex: 0 0 180px;         /* smaller width on mobile */
+    align-self: center;      /* center image under text */
+  }
+}
