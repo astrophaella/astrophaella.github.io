@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title | default: site.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+  <header>
+    <div class="banner"><h1>Astrophaella</h1></div>
+    <nav>
+      <a href="{{ '/index.html' | relative_url }}">Home</a>
+      <a href="{{ '/galleries/astrophotog/astrophotography.html' | relative_url }}">Astrophotography</a>
+      <a href="{{ '/about/outreach.html' | relative_url }}">Outreach</a>
+      <a href="{{ '/equipment.html' | relative_url }}">Equipment</a>
+      <a href="{{ '/about/contact.html' | relative_url }}">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    {{ content }}
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Astrophaella. All rights reserved. Except Astrophotographs: <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a>.</p>
+  </footer>
+</body>
+</html>

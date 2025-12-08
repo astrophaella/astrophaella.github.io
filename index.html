@@ -1,50 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Astrophaella - Home</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-<header>
-  <div class="banner"><h1>Astrophaella</h1></div>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="astrophotography.html">Astrophotography</a>
-    <a href="outreach.html">Outreach</a>
-    <a href="equipment.html">Equipment</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-</header>
+---
+layout: default
+title: Astrophaella - Home
+---
 
 <main>
   <section class="hero">
-    <img src="images/banner1.jpg" alt="Banner 1">
-    <img src="images/banner2.jpg" alt="Banner 2">
-    <img src="images/banner3.jpg" alt="Banner 3">
+    <img src="assets/images/banner1.jpg" alt="Banner 1">
+    <img src="assets/images/banner2.jpg" alt="Banner 2">
+    <img src="assets/images/banner3.jpg" alt="Banner 3">
   </section>
 
-  <h2>Recent Posts</h2>
-  <article>
-    <h3>Exploring the Flying Dragon Nebula</h3>
-    <p>A faint emission nebula near Deneb, this region shows rich hydrogen filaments...</p>
-    <a href="#">Read more</a>
-  </article>
-  <article>
-    <h3>Capturing the Helix Nebula from Singapore</h3>
-    <p>Despite city lights, careful narrowband imaging revealed stunning detail...</p>
-    <a href="#">Read more</a>
-  </article>
-  <article>
-    <h3>Widefield View of Cygnus</h3>
-    <p>A panorama combining Hα and RGB data to show the intricate gas structures...</p>
-    <a href="#">Read more</a>
-  </article>
+<div class="recent-posts-container">
+  <h2 class="section-title">Recent Posts</h2>
+  
+  <!-- <ul class="post-list"> -->
+    {% for post in site.posts limit:3 %}
+      
+        <article>
+          <h3 class="post-title">
+          {{ post.title }}
+          </h3>
+          
+          <p class="post-excerpt">
+            {{ post.excerpt | strip_html | truncatewords: 20 }}
+          </p>
+          
+          <a href="{{ post.url }}" class="read-more">Read more</a>
+        </article>
+    {% endfor %}
+  <!-- </ul> -->
+</div>
 </main>
 
-<footer>
-  <p>&copy; 2025 Astrophaella. All rights reserved. Except Astrophotographs: <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a>.</p>
-</footer>
+
 </body>
-</html>

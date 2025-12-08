@@ -1,0 +1,13 @@
+defaults:
+  # Rule 1: Apply 'default' layout to EVERYTHING (pages, archives, etc.)
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+  # Rule 2: Specifically override 'posts' to use the 'post' layout
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
