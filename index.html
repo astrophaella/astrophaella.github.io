@@ -2,13 +2,18 @@
 layout: default
 title: Astrophaella - Home
 ---
-
+<script src="https://cdn.jsdelivr.net/npm/lunr/lunr.min.js"></script>
+<script src="/assets/js/search.js"></script>
 <main>
   <section class="hero">
     <img src="assets/images/banner1.jpg" alt="Banner 1">
     <img src="assets/images/banner2.jpg" alt="Banner 2">
     <img src="assets/images/banner3.jpg" alt="Banner 3">
   </section>
+<input type="text" id="search-box" placeholder="Search posts..." />
+
+<ul id="search-results"></ul>
+
 
 <div class="recent-posts-container">
   <h2 class="section-title">Recent Posts</h2>
@@ -34,3 +39,4 @@ title: Astrophaella - Home
 
 
 </body>
+
