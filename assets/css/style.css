@@ -231,4 +231,18 @@ footer {
 /* Smaller image for contact page */
 .contact-image {
   flex: 0 0 200px !important;
+  border-radius: 8px;
+  max-width: 250px !important;
+}
+
+/* Smaller images for equipment page */
+.equipment-image {
+  flex: 0 0 180px !important;
+  max-width: 300px !important;
+}
+
+/* Smaller images for equipment page */
+.wide-image {
+  flex: 0 0 180px !important;
+  max-width: 500px !important;
 }
