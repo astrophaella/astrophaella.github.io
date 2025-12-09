@@ -11,7 +11,7 @@ Hello! I'm an amateur astrophotographer and astronomy educator who enjoys captur
 
 ### Contact
 
-[Email](mailto:raphaelloh@hotmail.com)
+[Email](mailto:astrophaelloh@hotmail.com)
 
 [LinkedIn](https://www.linkedin.com/in/raphael-l-569807140/)
 
