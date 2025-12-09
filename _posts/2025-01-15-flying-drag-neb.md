@@ -1,11 +1,10 @@
 ---
 title: "Exploring the Flying Dragon Nebula"
-layout: default
+layout: post
 date: 2025-01-15
 excerpt: A faint emission nebula near Deneb, this region shows rich hydrogen filaments...
 
 ---
-Date: {{ page.date }}
 A faint emission nebula near Deneb, this region shows rich hydrogen filaments...
 
 
